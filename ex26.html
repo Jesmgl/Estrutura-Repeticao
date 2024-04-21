@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 26</title>
+</head>
+<body>
+    
+<script>
+
+let numero = parseInt(prompt("Digite um número inteiro"));
+let soma = 0;
+
+let contador = 2;
+
+
+do{
+    if (contador % 2 === 0) {
+            // Se for par, adicione-o à soma
+            soma += contador;
+        }
+contador ++;
+
+}while( contador <= numero);
+
+
+
+document.write("A soma dos números pares é \n" + soma);
+
+
+</script>
+
+</body>
+</html>

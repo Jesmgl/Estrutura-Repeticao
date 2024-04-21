@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 25</title>
+</head>
+<body>
+    
+    <script>
+
+    let fibonacci1 = 0;
+    let fibonacci2 = 1;
+  
+    let contador = 2;
+
+    
+    do {
+        let proximoFibonacci = fibonacci1 + fibonacci2;
+        document.write('</br>' + proximoFibonacci);
+        
+        fibonacci1 = fibonacci2;
+        fibonacci2 = proximoFibonacci;
+        contador++;
+    } while (contador < 20);
+
+
+    </script>
+
+</body>
+</html>

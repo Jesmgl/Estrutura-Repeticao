@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 23</title>
+</head>
+<body>
+    
+    <script>
+        let limite = parseInt(prompt("Digite um número inteiro:"));
+
+
+let fibonacci1 = 0;
+let fibonacci2 = 1;
+
+
+document.write(fibonacci1);
+
+
+if (limite > 1) {
+    document.write(fibonacci2);
+}
+
+
+let proximoFibonacci;
+do {
+    proximoFibonacci = fibonacci1 + fibonacci2;
+    
+    if (proximoFibonacci <= limite) {
+        document.write(proximoFibonacci);
+    }
+    
+    fibonacci1 = fibonacci2;
+    fibonacci2 = proximoFibonacci;
+} while (proximoFibonacci <= limite);
+    </script>
+
+
+</body>
+</html>

@@ -16,20 +16,21 @@ let contador = 0;
 
 do{
 
-    if (contador > 0){
+    //verifica se o numero é divisível pelo divisor atual
+    if (numero % divisor === 0){
+        contador++;
+    }
+
+    divisor++;
+    
+
+}while (divisor < numero)
+
+if (contador > 0){
         document.write(numero + " \n Não é um número primo.")
     } else {
         document.write(numero + " \n É um numero primo.")
     }
-
-}while (divisor < numero)
-
-    if (numero % divisor === 0){
-
-    contador++;
-    }
-
-    divisor++;
 
 
 </script>

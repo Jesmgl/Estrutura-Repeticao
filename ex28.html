@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 28</title>
+</head>
+<body>
+
+
+    <script>
+
+let numero = prompt("Digite um número inteiro: ");
+let numeroAtual = numero;
+
+
+do {
+    let digito = numeroAtual % 10;
+    document.write(digito);
+    numeroAtual = Math.floor(numeroAtual / 10);
+} while (numeroAtual > 0);
+
+
+    </script>
+    
+</body>
+</html>

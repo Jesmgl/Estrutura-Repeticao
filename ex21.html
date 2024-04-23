@@ -9,7 +9,25 @@
     
 <script>
 
-let contador = 0;
+
+let numero;
+do {
+    numero = parseInt(prompt("Digite um número inteiro positivo:"));
+} while (isNaN(numero) || numero <= 0); 
+
+let divisor = 1;
+
+
+document.write("Divisores de " + numero + ":");
+do {
+    
+    if (numero % divisor === 0) {
+        document.write(divisor);
+    }
+    
+    divisor++;
+} while (divisor <= numero);
+
 
 
 

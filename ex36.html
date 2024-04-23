@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 36</title>
+</head>
+<body>
+    
+
+<script>
+
+    
+let numero = parseInt(prompt("Digite um número inteiro positivo:"));
+
+
+if (!isNaN(numero) && numero > 0) {
+    document.write("Os divisores de " + numero + " são:");
+
+    
+    for (let i = 1; i <= numero; i++) {
+        if (numero % i === 0) {
+            console.log(i);
+        }
+    }
+} else {
+    
+    document.write("Número inválido. Por favor, insira um número inteiro positivo.");
+}
+
+
+//arrumar esse codigo
+
+
+</script>
+
+</body>
+</html>

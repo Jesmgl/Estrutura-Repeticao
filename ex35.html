@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 35</title>
+</head>
+<body>
+
+<script>
+
+
+let numero = parseInt(prompt("Digite um número inteiro para exibir a tabuada:"));
+
+
+if (!isNaN(numero)) {
+    
+    for (let i = 1; i <= 10; i++) {
+        let resultado = numero * i;
+        document.write(numero + " x " + i + " = " + resultado);
+    }
+} else {
+    
+    document.write("Número inválido. Por favor, insira um número inteiro válido.");
+}
+
+
+
+</script>
+
+  
+</body>
+</html>

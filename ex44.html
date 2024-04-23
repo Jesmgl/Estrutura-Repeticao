@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 44</title>
+</head>
+<body>
+
+    <script>
+
+        
+    function calcularFatorial(numero) {
+        
+        if (numero === 0 || numero === 1) {
+            return 1;
+        }
+        
+        
+        let fatorial = 1;
+        
+        
+        for (let i = 2; i <= numero; i++) {
+            fatorial *= i;
+        }
+        
+        return fatorial;
+    }
+
+
+    let numero = parseInt(prompt("Digite um número inteiro para calcular o fatorial:"));
+
+
+    if (!isNaN(numero)) {
+        
+        document.write("O fatorial de " + numero + " é: " + calcularFatorial(numero));
+    } else {
+        
+        document.write("Número inválido. Por favor, insira um número inteiro.");
+    }
+
+
+
+    </script>
+    
+</body>
+</html>

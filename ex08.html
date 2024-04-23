@@ -10,10 +10,29 @@
 
 <script>
 
-let contador = 0;
-let fib = 1;
 
-while (contador <= numero)
+let numero = parseInt(prompt("Digite um número inteiro para exibir a sequência de Fibonacci até esse número:"));
+
+
+if (!isNaN(numero)) {
+    let a = 0, b = 1;
+
+    
+    documento.write("Sequência de Fibonacci até " + numero + ":");
+    document.write(a);
+    document.write(b);
+
+    
+    while (b <= numero) {
+        let c = a + b;
+        document.write(c);
+        a = b;
+        b = c;
+    }
+} else {
+    document.write("Número inválido. Por favor, insira um número inteiro válido.");
+}
+
 
 
 
